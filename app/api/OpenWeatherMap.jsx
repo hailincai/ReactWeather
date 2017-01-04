@@ -10,7 +10,6 @@ const OPEN_WEATHER_API = {
     //promise then and catch return value is wrapped in the promise also
     return axios.get(requestURL)
           .then(function(res){
-            debugger;
             if (res.data.cod && res.data.message){
               //means something went wrong
               throw new Error(res.data.message);
