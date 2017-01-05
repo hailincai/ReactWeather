@@ -6,7 +6,7 @@ var WeatherMessage = (props) => {
   let {location, temparature} = props;
 
   return (
-    <h3>The temprature of {location} is {temparature}!!!</h3>
+    <h3 className="text-center">The temprature of {location} is {temparature}!!!</h3>
   )
 };
 
