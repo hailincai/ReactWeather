@@ -17,8 +17,8 @@ const OPEN_WEATHER_API = {
               return res.data.main.temp;
             }
           })
-          .catch(function(res){
-            throw new Error(res.data.message);
+          .catch(function(err){
+            throw new Error(err.response.data.message);
           })
   }
 }
