@@ -6,6 +6,12 @@ import Weather from "Weather";
 import About from "About";
 import Examples from "Examples";
 
+//load foundation-sites
+//style! inject style in html
+//css! load css file
+require("style!css!foundation-sites/dist/foundation.min.css");
+$(document).foundation();
+
 //using createClass method,
 //the method in the component are automatically bound to component itself
 ReactDOM.render(
