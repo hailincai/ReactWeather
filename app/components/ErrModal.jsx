@@ -17,6 +17,7 @@ var ErrModal = React.createClass({
     errMessage: React.PropTypes.string.isRequired
   },
 
+
   render: function(){
     return(
       <div className="reveal tiny text-center" id="error-modal" data-reveal="">

@@ -12,6 +12,8 @@ import Examples from "Examples";
 require("style!css!foundation-sites/dist/foundation.min.css");
 $(document).foundation();
 
+require("style!css!applicationStyles");
+
 //using createClass method,
 //the method in the component are automatically bound to component itself
 ReactDOM.render(

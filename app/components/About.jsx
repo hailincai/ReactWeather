@@ -5,7 +5,7 @@ import {Link} from "react-router";
 var About = (props) => {
   return (
     <div>
-      <h1 className="text-center">About</h1>
+      <h1 className="text-center page-title">About</h1>
       <p>Here are a few links for this project!</p>
       <ol>
         <li>
