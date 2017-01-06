@@ -5,7 +5,12 @@ var Nav = React.createClass({
   onSearch: function(e){
     e.preventDefault();
 
-    alert("No yet wired up!");
+    let location = this.refs.search.value;
+    if (typeof location === "string" && location.length > 0){
+      this.refs.search.value = "";
+      //this will change the weather component's properties
+      window.location.hash = "#/?location=" + encodeURIComponent(location);
+    }
   },
 
   render: function(){
@@ -35,7 +40,7 @@ var Nav = React.createClass({
         <div className="top-bar-right">
           <form onSubmit={this.onSearch}>
             <ul className="menu">
-              <li><input type="search" placeholder="Search weather by city"/></li>
+              <li><input type="search" ref="search" placeholder="Search weather by city"/></li>
               <li><input type="submit" className="button" value="Get Weathre"/></li>
             </ul>
           </form>
